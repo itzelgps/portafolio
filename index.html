@@ -1,30 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio de Itzel</title>
-  </head>
-  <body>
-    <h1>Portafolio de Itzel</h1>
-    <h2>Soy una Desarrolladora Web</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img
-      src="./assets/images/movie-ranking.png"
-      height="200"
-      alt="Movie Ranking Project preview"
-    />
-    <h3><a href="./public/birthday-invite.html">Birthday Invide Proyect</a></h3>
-    <img
-      src="./assets/images/birthday-invite.png"
-      height="200"
-      alt="Birthday Invide Proyect preview"
-    />
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
-  </body>
-</html>
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Portafolio donde demuestro mis conocimientos y habilidades">
+  <meta name="author" content="Itzel Guadalupe">
+
+  <title>Desarrolladora Java - Portafolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100%;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    .grid-container>* {
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+
+    }
+
+    .header {
+      grid-area: header;
+      background-color: blue;
+    }
+
+    .navbar {
+      grid-area: navbar;
+      background-color: brown;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: forestgreen;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: cornflowerblue;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: coral;
+    }
+
+    /* Telefono */
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "footer";
+    }
+
+    /* Para tablet */
+    @media (min-width: 600px) {
+      .grid-container {
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+          "header header"
+          "navbar navbar"
+          "sidebar main"
+          "footer footer";
+      }
+    }
+
+    /* Escritorio */
+    @media (min-width: 900px) {
+      .grid-container {
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+          "header header header"
+          "navbar navbar navbar"
+          "sidebar sidebar main "
+          "footer footer footer";
+      }
+    }
+
+    /* Animaciones */
+    @keyframes ajo {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+
+    }
+
+    .ajo {
+      animation-name: ajo;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+    }
+  </style>
+
+<body class="grid-container">
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Itzel Guadalupe</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link"><span data-hover="Acerca">Acerca</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link"><span data-hover="Projectos">Projectos</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#recomandacion" class="nav-link"><span data-hover="Recomandacion">Recomendaciones</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ACERCA -->
+  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+          <div class="about-text">
+            <h1 class="animated animated-text">
+              <span class="mr-2">Hola, soy </span>
+              <div class="animated-info">
+                <div class="animated-item">Itzel Guadalupe</div>
+                <div class="animated-item">Dasarrolladora Java en proceso</div>
+              </div>
+            </h1>
+
+            <p>Hola, soy Itzel soy una apasiona de la programación como la idea crear algo que cambie al mundo. Soy una
+              persona creativa, le gusta aprender constantemente.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="about-image svg">
+            <img src="./assets/img/itzel-guadalupe.png" class="img-fluid" alt="svg image" width="150px" height="150px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <div class="container">
+    <h3>Proyectos</h3>
+    <div class="sidebar card-group">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Titulo del proyecto</h5>
+          <p class="card-text">Breve description del proyecto</p>
+        </div>
+        <div class="d-grid gap-2 d-md-block  justify-content-md-middle">
+          <button class="btn btn-primary" type="button">Ver el proyecto</button>
+          <button class="btn btn-primary" type="button">Codigo</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Titulo del proyecto</h5>
+          <p class="card-text">Breve description del proyecto</p>
+        </div>
+        <div class="d-grid gap-2 d-md-block  justify-content-md-middle">
+          <button class="btn btn-primary" type="button">Ver el proyecto</button>
+          <button class="btn btn-primary" type="button">Codigo</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Titulo del proyecto</h5>
+          <p class="card-text">Breve description del proyecto.</p>
+        </div>
+        <div class="d-grid gap-2 d-md-block  justify-content-center">
+          <button class="btn btn-primary" type="button">Ver el proyecto</button>
+          <button class="btn btn-primary" type="button">Codigo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12 col-12">
+          <h3>Paginación</h3>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link"><span data-hover="About">Acerca</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link"><span data-hover="Projects">Projectos</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link"><span data-hover="Resume">Recomendaciones</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
