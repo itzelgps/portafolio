@@ -1,0 +1,82 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+
+/* Seccion Hero */
+.hero {
+  background-color: #f5f6f7;
+  min-width: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal  {
+  font-size: 1.5rem;
+}
+
+.hero-principal h2{
+  font-size: 1.5rem;
+}
+
+/* Sobre mi  */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
