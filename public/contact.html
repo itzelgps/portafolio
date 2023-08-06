@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Itzel Guadalupe">
+  <meta name="description" content="Portafolio de desarrolladora web de Itzel Guadalupe">
+  <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, Java, Git, GitHub, Terminal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Itzel Guadalupe | Desarrolladora Web y Java</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/minireset.min.css"> -->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Icono Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+  <!-- Barra de navagacion -->
+  <nav class="navbar navbar-expand-md ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/images.png" width="50" alt="Logo de la pagina" />
+        <!-- <i class="bi bi-code-slash"></i> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbar-toggler">
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html#hero">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#portafolio">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario -->
+  <form>
+    <div class="container">
+      <h3>Contactame</h3>
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+            <p id="alertValidacionesTexto"></p>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre Completo: </label>
+            <input type="text" class="form-control" id="nombre" aria-describedby="Nombre Completo"
+              placeholder="Nombre Completo" required />
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Apellidos: </label>
+            <input type="text" class="form-control" id="lastname" aria-describedby="Apellidos" placeholder="Apellidos"
+              required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <label for="mail" class="form-label">Correo electrónico: </label>
+            <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
+              placeholder="Correo electrónico" required />
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="tel" class="form-label">Teléfono: </label>
+            <input type="tel" class="form-control" placeholder="Teléfono" id="tel">
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto: </label>
+        <input type="text" class="form-control" id="asunto" aria-describedby="Asunto" placeholder="Asunto" required>
+      </div>
+      <div class="mb-3">
+        <label for="msg" class="form-label">Mensaje: </label>
+        <textarea type="text" class="form-control" id="msg" aria-describedby="Asunto" placeholder="Mensaje"
+          required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+
+  <!-- <div class="container">
+    <section class="formulario">
+      <h3>Contactame</h3>
+      <form>
+        <ul>
+          <div class="form">
+            <li>
+              <input type="text" id="name" name="user_name" placeholder="Nombre Completo" required />
+            </li>
+            <li>
+              <input type="text" id="lastname" name="user_lastname" placeholder="Apellidos" required />
+            </li>
+          </div>
+          <li>
+            <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico" required />
+          </li>
+          <li>
+            <input type="tel" id="tel" name="user_tel" placeholder="Teléfono" />
+          </li>
+          <li>
+            <input type="text" id="subject" name="user_subject" placeholder="Asunto" required />
+          </li>
+          <li>
+            <textarea id="msg" name="user_message" placeholder="Mensaje" required></textarea>
+          </li>
+          <button type="submit" id="enviar">Enviar</button>
+        </ul>
+      </form>
+    </section>
+  </div> -->
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <div class="container">
+      <div class="footererc">
+        <p class="footer-texto">Copyright © 2023. All rights are reserved</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-end justify-content-end">
+          <a href="https://www.linkedin.com/in/perezitzel/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:itzelgps99@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

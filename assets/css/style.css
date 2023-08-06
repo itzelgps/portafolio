@@ -2,7 +2,7 @@
 
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: #fff;
 }
 
 .navbar-collapse {
@@ -25,7 +25,6 @@ h1 {
 }
 
 .seccion-titulo {
-  font-size: 2rem;
   padding: 15px 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -34,22 +33,34 @@ h1 {
   font-size: 1.2rem;
 }
 
+.seccion-gris {
+  background-color: #f9f9f9;
+}
+
+.seccion-oscura {
+  background-color: #2d2e32;
+}
+
+.link a{
+  color: #2d2e32;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-decoration:none;
+}
 
 /* Seccion Hero */
 .hero {
-  background-color: #f5f6f7;
   min-width: 450px;
   text-align: center;
 }
 
 .hero-principal {
-  padding: 3rem;
+  padding: 3.5rem;
 }
 
 .hero-imagen {
   width: 200px;
   height: 200px;
-  margin: 20px;
 }
 
 .hero-principal  {
@@ -57,7 +68,21 @@ h1 {
 }
 
 .hero-principal h2{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.skills {
+  align-items: center;
+  display: flex;
+  font-size: 1.7rem;
+}
+
+.skills ul {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  list-style: none;
+  gap: 12px;
 }
 
 /* Sobre mi  */
@@ -72,6 +97,66 @@ h1 {
   text-align: center;
 }
 
+/* Portafolio */
+
+.portafolio {
+  padding: 30px;
+}
+
+.portafolio img{
+  width: 100%;
+  height: auto;
+}
+
+/* Formulario */
+
+.formulario{
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px 164.5px;
+  padding: 0px 60px;
+  text-align: left;
+}
+
+.form {
+  align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form li{
+  padding: 5px;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  background-color: #2d2e32;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.footer-texto {
+  font-size: 1.2rem;
+  color: #fff;
+  /* font-family: ; */
+}
+
+.iconos-redes-sociales i {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+  padding: 5px;
+}
+
+.footererc {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Adaptable (Responsivo) */
 

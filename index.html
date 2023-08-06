@@ -11,7 +11,7 @@
   <!-- Titulo -->
   <title>Itzel Guadalupe | Desarrolladora Web y Java</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- <link rel="stylesheet" href="./assets/css/minireset.min.css"> -->
@@ -29,11 +29,11 @@
 
 <body>
   <!-- Barra de navagacion -->
-  <nav class="navbar navbar-expand-md navbar-light ">
+  <nav class="navbar navbar-expand-md ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <!-- <img src="#" width="50" alt="Logo de la pagina" /> -->
-        <i class="bi bi-code-slash"></i>
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/images.png" width="50" alt="Logo de la pagina" />
+        <!-- <i class="bi bi-code-slash"></i> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,16 +42,16 @@
       <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbar-toggler">
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mí</a>
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
+            <a class="nav-link" href="#portafolio">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="./public/contact.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -59,94 +59,177 @@
   </nav>
 
   <!-- Seccion Hero -->
-  <section class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h1>Desarrolladora FullStack Java Junior</h1>
-          <h2>Hola, Soy Itzel Guadalupe. Una apasionada desarrolladora que le gusta construir cosas</h2>
+  <section id="hero" class="hero seccion-gris align-items-stretch">
+    <div class="container">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1>Desarrolladora FullStack Java Junior</h1>
+            <h2>Hola, Soy Itzel Guadalupe. Una apasionada desarrolladora que le gusta construir cosas.</h2>
+            <div class="link d-flex flex-wrap align-items-start justify-content-start">
+              <a href="https://www.linkedin.com/in/perezitzel/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="hero-imagen rounded-circle" src="./assets/img/itzel-guadalupe.png"
+              alt="Foto de Itzel Guadalupe" />
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <img class="hero-imagen rounded-circle" src="./assets/img/itzel-guadalupe.png"
-            alt="Foto de Itzel Guadalupe" />
+        <div class="skills">
+          <p>Tech Stack | </p>
+          <ul class="skill-icon">
+            <li>
+              <img src="./assets/img/html-icon.png" title="HTML5" alt="skill-icon">
+            </li>
+            <li>
+              <img src="./assets/img/css3-icon.png" title="CSS3" alt="skill-icon">
+            </li>
+            <li>
+              <img src="./assets/img/javascript-icon.png" title="JavaScript" alt="skill-icon">
+            </li>
+            <li>
+              <img src="./assets/img/java-icon.png" title="Java" alt="skill-icon">
+            </li>
+            <li>
+              <img src="./assets/img/git-icon.png" title="Git" alt="skill-icon">
+            </li>
+            <li>
+              <img src="./assets/img/terminal-icon.png" title="Terminal" alt="skill-icon">
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="skills">
-        <p>Tech Stack</p>
-
-
       </div>
     </div>
   </section>
 
   <!-- Sobre mí -->
-  <section class="sobre-mi">
+  <section id="sobre-mi" class="sobre-mi">
     <div class="contenedor">
       <h2 class="seccion-titulo">Sobre mí</h2>
-      <p class="seccion-titulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, molestias temporibus.
-        Ullam alias amet asperiores accusamus numquam ex ut mollitia optio et quis. Suscipit doloribus laboriosam illum
-        quibusdam repellat eum.</p>
+      <p class="seccion-titulo">Hola, soy Itzel soy una apasiona de la programación como la idea crear algo que cambie
+        al mundo. Soy una persona creativa, le gusta aprender constantemente. <br /> De las ganas de aprender y lograr
+        mis metas termine la Ingeniería en Desarrollo y Gestión de Software. Aprendí mucho que
+        me enfoque a Desarrollo Web realizando paginas web que ayudar a las personas lleven sus ideas al próximo nivel.
+        Mi otro
+        logro fue liderar el proyecto “Granados S.A de C.V” obteniendo el primer lugar de nuestro equipo presentándolo
+        al
+        director de la Universidad. El proyecto fue realizado con HTML, CSS, PHP y MySQL.</p>
     </div>
   </section>
 
-  <!-- Proyectos -->
-  <section class="d-flex d-colums">
-    <h2>Proyectos</h2>
+  <!-- Portafolio -->
+  <section id="portafolio" class="portafolio seccion-gris d-colums">
+    <h2>Portafolio</h2>
     <h3>Estos son algunos de mis proyectos que he creado recientemente.</h3>
-    <!-- Proyecto 1 -->
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="..." class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
+    <div class="col-8 col-md-8">
+      <!-- Proyecto 1 -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./assets/img/gray-solid.jpg" class="img-fluid rounded-start" alt="Primer Proyecto">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title text-center">Granados S.A. de C.V.</h5>
+              <p class="card-text text-center">Pagina web para la compra y venta de mango. La empresa es una
+                distriduidora de mangos en México y Estados Unidos.</p>
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">PHP</span>
+              <span class="badge text-bg-primary">MySQL</span>
+              <div class="link d-flex flex-wrap align-items-start justify-content-start">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Code <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Live Demo <i class="bi bi-box-arrow-up-right"></i></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Proyecto 2 -->
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
+      <!-- Proyecto 2 -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title text-center">Granados S.A. de C.V.</h5>
+              <p class="card-text text-center">Pagina web para la compra y venta de mango. La empresa es una
+                distriduidora de mangos en México y Estados Unidos.</p>
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">PHP</span>
+              <span class="badge text-bg-primary">MySQL</span>
+              <div class="link d-flex flex-wrap align-items-start justify-content-start">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Code <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Live Demo <i class="bi bi-box-arrow-up-right"></i></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/img/gray-solid.jpg" class="img-fluid rounded-start" alt="Primer Proyecto">
           </div>
         </div>
-        <div class="col-md-4">
-          <img src="..." class="img-fluid rounded-start" alt="...">
-        </div>
       </div>
-    </div>
-
-    <!-- Proyecto 3 -->
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="..." class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
+      <!-- Proyecto 3 -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./assets/img/gray-solid.jpg" class="img-fluid rounded-start" alt="Primer Proyecto">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title text-center">Granados S.A. de C.V.</h5>
+              <p class="card-text text-center">Pagina web para la compra y venta de mango. La empresa es una
+                distriduidora de mangos en México y Estados Unidos.</p>
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">PHP</span>
+              <span class="badge text-bg-primary">MySQL</span>
+              <div class="link d-flex flex-wrap align-items-start justify-content-start">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Code <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Live Demo <i class="bi bi-box-arrow-up-right"></i></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-
+  <!-- Pie de pagina (footer) -->
+  <footer id="footer" class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <div class="container">
+      <div class="footererc">
+        <p class="footer-texto">Copyright © 2023. All rights are reserved</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-end justify-content-end">
+          <a href="https://www.linkedin.com/in/perezitzel/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:itzelgps99@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
